@@ -1,0 +1,146 @@
+*{
+	padding: 0px;
+	margin:0px;
+}
+body{
+	width: 1295px;
+	height: 1000px;
+	font-family: "Helvetica", "Tahoma, Arial", "sans-serif";
+	background-color:#BBFFEE ;
+}
+/**********************博客最上面的黑色导航*****************************/
+#toolbar{
+	width: 100%;
+	height: 40px;
+	background-color: #333;
+}
+#toolbar_content{
+	width: 1100px;
+	height: 100%;
+	margin: 0 auto;
+}
+#tb_ul{
+	float: right;
+	font-size: 12px;
+	/*line-height: 40px;*/
+	position: relative;
+}
+#li_login{
+	line-height: 40px;
+	vertical-align: top;
+}
+#tb_ul li{
+	list-style-type: none;
+	display: inline-block;
+	border-right: 1px solid #74797e;
+	overflow: hidden;
+}
+
+#tb_ul img{
+	margin-top: 13px;
+	width: 100%;
+	height: 100%;
+}
+#li_login a{
+	color: #cccccc;
+	text-decoration: none;
+}
+#li_login a:hover{
+	color: #ffffff;
+	text-decoration: none;
+}
+#li_login span{
+	color: #cccccc;
+}
+
+#img2{
+	margin-left: -10px;
+}
+
+.li_bg_white{
+	padding-left:10px;
+	padding-right: 10px;
+	padding-bottom: -3px;
+}
+.li_bg_white:hover{
+	background-color: #ffffff;
+}
+.tb_hover{
+	display: none;
+}
+.tb_hover #search{
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	margin-top: 20px;
+}
+#search input{
+	width: 90%;
+	height: 20px;
+	background: url("../img/enter.png") right bottom no-repeat;
+}
+.li_bg_white:hover .tb_hover{
+	background-color: #ffffff;
+	position: absolute;
+	top:150;
+	right: 0;
+	display: block;
+	width: 300px;
+	height: auto;
+}
+#menu{
+	width: 280px;
+	padding: 10px;
+}
+#menu .menu{
+	float: left;
+	width: 90px;
+}
+.ul dt{
+	line-height: 25px;
+	width: 75px;
+	height: 25px;
+	border-bottom:1px solid #ccc;
+}
+.a1{
+	color: #333;
+	width: 100%;
+	height: 90%;
+	font-size: 12px;
+	line-height: 25px;
+	text-decoration: none;
+}
+.a1:hover{
+	color:#333; 
+	text-decoration: none;
+}
+
+
+#head{
+	width: 900px;
+	height: 71px;
+	margin-left:  auto;
+	margin-right: auto;
+	background-color: #cccccc;
+}
+#head h1{
+	padding-top: 30px;
+}
+#head a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#nav{
+	width: 1100px;
+	height: 142px;
+	margin: 0 auto;
+}
+#list{
+	float: right;
+	margin-top: 100px;
+}
+#list li{
+	list-style: none;
+	float: left;
+}
