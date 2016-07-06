@@ -1,0 +1,28 @@
+*{
+	padding: 0;
+	margin:0;
+}
+.photo_list{
+	width: 498px;
+	height: 156px;
+	overflow: hidden;
+	border: 1px dashed #ccc;
+	margin:100px auto;
+	position: relative;
+}
+.scroll{
+	list-style: none;
+	/*width: 996px;*/
+	/*position: absolute;
+	top: 0px;
+	left: 0px;*/
+	/*transition: left 1s linear;*/
+}
+.scroll li{
+	float: left;
+	padding-right: 10px;
+}
+.scroll img{
+	padding: 2px;
+	border: 1px solid #ccc;
+}

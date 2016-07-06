@@ -1,0 +1,32 @@
+.container{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 500px;
+	height: 500px;
+	margin-left: -250px;
+	margin-top: -250px;
+}
+.img_wrapper{
+	width: 500px;
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+}
+.bigbold{
+	font-size: 56px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #ccc;
+	position: absolute;
+	top: 222px;
+}
+.bigbold:hover{
+	cursor: pointer;
+}
+.pre{
+	left: 0;
+}
+.next{
+	right: 0;
+}
