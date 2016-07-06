@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<title>带三角形的div</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	.rect{
+		width: 200px;
+		height: 100px;
+		margin:50px auto;
+		border:1px solid red;
+	}
+	h1{
+		text-align: center;
+	}
+	/*.triangle{
+		width: 10px;
+		height: 10px;
+		border:1px solid black;
+		position: relative;	
+	}*/
+	/***********************用特殊字符实现******************************/
+	.rect span{
+		display: block;
+		width: 20px;
+		height: 20px;
+		font-size: 20px;
+		/*margin-left: 10px;*/    /*上、下边 */	
+	}
+	.span1{
+		color: red;
+		/*margin-top: -11px;*/   /*上边*/
+		/*margin-left: 191px;
+		margin-top: 20px;       右边*/
+		/*margin-top: 90px;*/    /*下边*/
+		margin-top: 20px;	
+		margin-left: -10px;    /*左边*/
+	}
+	.span2{
+		color: white;
+		/*margin-top: -19px;*/    /*上边*/
+		/*margin-top: -20px;
+		margin-left: 190px; */       /*右边*/
+		/*margin-top: -21px;*/     /*下边*/
+		margin-left: -9px;
+		margin-top: -20px;          /*左边*/
+	}
+	/***************************利用border实现****************************/
+	.triangle{
+		width: 0;
+		height: 0;
+		border:10px solid;
+		/*border-color: red green blue yellow;*/   /*所有边框*/
+		border-color: transparent transparent red transparent;
+		margin-top: -20px;
+	}
+	.white_triangle{
+		width: 0;
+		height: 0;
+		border:10px solid;
+		border-color: transparent transparent white transparent;
+		margin-top: -19px;
+	}
+	</style>
+</head>
+<body>
+<h1>用特殊字符实现三角</h1>
+<div class="rect">
+	<!-- <div class="triangle"></div> -->
+	<span class="span1">&#9670;</span>   
+	<span class="span2">&#9670;</span>
+	
+</div>
+<h1>利用border属性实现三角</h1>
+<div class="rect">
+	<div class="triangle"></div>
+	<div class="white_triangle"></div>
+</div>
+</body>
+</html>
