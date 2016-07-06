@@ -1,0 +1,54 @@
+*{
+	margin:0;
+	padding: 0;
+	background-color: #ccc;
+	font-size: 15px;
+}
+.container{
+	margin:30px auto;
+	width: 700px;
+}
+.label{
+	background-color: #69c;
+	color: white;
+	text-align: center;
+	padding: 10px 15px;
+	border-radius: 5px 5px 0 0;
+	margin-left: -5px;
+}
+label[for="tab1"]{margin-left: 0;}
+.label a{
+	text-decoration: none;
+	color: inherit;
+}
+input[name="tab"]{
+	display: none;
+}
+input#tab1:checked~label[for="tab1"]{
+	background-color: white;
+	color: black;
+}
+input#tab2:checked~label[for="tab2"]{
+	background-color: white;
+	color: black;
+}
+input#tab3:checked~label[for="tab3"]{
+	background-color: white;
+	color: black;
+}
+input#tab4:checked~label[for="tab4"]{
+	background-color: white;
+	color: black;
+}
+section{
+	background-color: white;
+	padding: 15px 0;
+	width: 100%;
+	color: black;
+	margin-top: 9px;
+	display: none;
+}
+input#tab1:checked~section#sec1{display: block;}
+input#tab2:checked~section#sec2{display: block;}
+input#tab3:checked~section#sec3{display: block;}
+input#tab4:checked~section#sec4{display: block;}
