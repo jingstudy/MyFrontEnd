@@ -1,0 +1,64 @@
+.container{
+	width: 180px;
+	height: 300px;
+	overflow: hidden;
+	background-image: url("run.png");
+	animation: run step-end infinite;
+	animation-duration: 1s;
+}
+a{
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-right: 20px;
+	text-decoration: none;
+	color:#fff;
+	background-color: silver;
+	border-radius: 10px;
+}
+.x-faster{
+	animation-duration: 400ms;
+}
+.faster{
+	animation-duration: 500ms;
+}
+.slower{
+	animation-duration: 600ms;
+}
+.x-slower{
+	animation-duration: 800ms;
+}
+.paused{
+	animation-play-state: paused;
+}
+@keyframes run{
+	0%{background-position: 0 0;}
+	14.3%{background-position: -180px 0;}
+	28.6%{background-position: -360px 0;}
+	42.9%{background-position: -540px 0;}
+	57.2%{background-position: -720px 0;}
+	71.5%{background-position: -900px 0;}
+	85.8%{background-position: -1080px 0;}
+	100%{background-position: 0 0;}
+}
+/*这种分法会错过某一帧：step-start错过第一帧，step-end错过最后一帧*/
+@keyframes runOne{
+	0%{background-position-x:0;}
+	16.7%{background-position-x:-180px;}
+	33.4%{background-position-x: -360px;}
+	50.1%{background-position-x: -540px;}
+	66.8%{background-position-x: -720px;}
+	83.5%{background-position-x: -900px;}
+	100%{background-position-x: -1080px;}
+}
+.testStep{
+	width: 180px;
+	height: 300px;
+	/*background-image: url("run.png");
+	animation: runOne 2s step-end infinite;*/
+	animation: test 3s infinite;
+}
+@keyframes test{
+	0%{background-color: red;}
+	50%{background-color: yellow;}
+	100%{background-color: blue;}
+}
