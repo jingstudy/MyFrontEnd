@@ -1,0 +1,35 @@
+table{
+	width: 800px;
+	margin:100px auto;
+	border:1px solid #333;
+	border-collapse: collapse;
+}
+caption{
+	padding-bottom: 20px;
+	font-weight: bold;
+	font-size: 24px;
+}
+th{
+	background-color:#73B1E0;
+	color: white;
+	padding: 10px;
+	border:1px solid #333;
+	border-collapse: collapse;
+}
+th:active{
+	background-color: #f4f4f4;
+	color: #000;
+}
+td{
+	text-align: center;
+	padding:10px;
+}
+td:focus{
+	background-color: white;
+}
+tbody>tr:nth-child(odd){
+	background-color: #f4f4f4;
+}
+tbody>tr:focus{
+	background-color: #87CEFA;
+}
