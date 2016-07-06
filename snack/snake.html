@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>贪吃蛇小游戏</title>
+	<style type="text/css">
+		body{
+			margin:0px;
+			padding: 0px;
+		}
+		#canvas{
+			background-color: black;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		table{
+			width: 600px;
+			margin-left:auto;
+			margin-right: auto;
+			margin-top: 20px;
+		}
+		button{
+			width: 80px;
+			height: 20px;
+		}
+		.gameover{
+			display: block;
+			width: 600px;
+			position: absolute;
+			left: 50%;
+			top: 300px;
+			margin-left: -280px;
+			font-size: 45px;
+			color: white;
+		}
+		a{
+			color: inherit;
+		}	
+	</style>
+</head>
+<body>
+<canvas id="canvas" width="600" height="600"></canvas>	
+<table>
+	<tr>
+		<td align="left">分数：</td>
+		<td align="left"><input type="text" id="score" disabled /></td>
+		<td align="left">难度：<select id="speed"><option value="500">简单</option><option value="200">中等</option><option value="100">困难</option></select></td>
+		<td align="left"><button id="start">开始</button></td>
+	</tr>
+</table>
+<div class="gameover"></div>
+<script src="snake.js"></script>
+</body>
+</html>
