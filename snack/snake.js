@@ -94,6 +94,7 @@
 				snk.go();
 				if(snk.isStop()){
 					clearTimeout(timeid);
+					//clearInterval(timeid);
 					document.getElementsByClassName("gameover")[0].innerHTML="gameover,<a href='snake.html'>再试一次</a>,加油^_^";
 					return;
 				}
@@ -103,6 +104,7 @@
 				timeid=setTimeout(fn,snk.interval);
 			};
 			fn();
+			//timeid=setInterval(fn, snk.interval);
 		}
 	};
 	var changeDirection=function(event){
